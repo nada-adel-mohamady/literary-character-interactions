@@ -1,7 +1,3 @@
-Absolutely! Since your project analyzes character interactions in books using an LLM and you’ve deployed both frontend and backend, here's a professional and clean `README.md` template tailored to your app.
-
----
-
 ## 📚 Literary Character Interaction Analyzer
 
 This web application analyzes character interactions in classic literature using an LLM. Users can enter a book ID, and the app will extract characters and map out their interactions.
@@ -44,7 +40,7 @@ Backend API: \[your-backend-url-here]
 #### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/nada-adel-mohamady/literary-character-interactions.git
 cd your-repo
 ```
 
@@ -55,7 +51,7 @@ cd backend
 npm install
 # Create a .env file with:
 # OPENROUTER_API_KEY=your-key-here
-npm run dev
+node index.js
 ```
 
 #### 3. Set up frontend
