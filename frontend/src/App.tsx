@@ -91,7 +91,7 @@ function App() {
       {characters.length > 0 && (
         <div>
           <h2>Characters</h2>
-          <ul>
+          <ul style={{ listStylePosition: 'inside' }}>
             {characters.map((char, i) => (
               <li key={i}>{char}</li>
             ))}
@@ -101,8 +101,8 @@ function App() {
 
       {interactions.length > 0 && (
         <div>
-          <h2>Character Interactions</h2>
-          <ul>
+          <h2>Character Network</h2>
+          <ul style={{ listStylePosition: 'inside' }}>
             {interactions.map((interaction, i) => (
               <li key={i}>
                 {interaction.source} → {interaction.target} (weight: {interaction.weight})
