@@ -18,6 +18,10 @@ This web application analyzes character interactions in classic literature using
 - **Backend API:** https://literary-character-interactions-production.up.railway.app
 
 ---
+## 📽️ Demo Walkthrough
+
+[Watch the demo walkthrough](https://drive.google.com/file/d/1SOarM83baZC4ta3Ek2NEj446RQbp605l/view?usp=sharing)
+---
 
 ### 🚀 Tech Stack
 
