@@ -23,7 +23,7 @@ This web application analyzes character interactions in classic literature using
 
 * **Frontend**: React, TypeScript, Axios, Vercel
 * **Backend**: Express.js, Node.js, OpenRouter API, Railway
-* **LLM**: OpenRouter-compatible model (e.g. GPT-4)
+* **LLM**: OpenRouter-compatible model (gpt-3.5-turbo)
 
 ---
 
