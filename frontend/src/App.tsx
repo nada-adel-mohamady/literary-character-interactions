@@ -26,7 +26,7 @@ function App() {
     setInteractions([]);
     try {
       setLoading(true);
-      const res = await axios.get<BookResponse>(`http://localhost:5000/api/book/${bookId}`);
+      const res = await axios.get<BookResponse>(`http://literary-character-interactions-production.up.railway.app/api/book/${bookId}`);
       setBookText(res.data.text);
     } catch (err) {
       console.error(err);
@@ -45,7 +45,7 @@ function App() {
       const res = await axios.post<{
         characters: string[];
         interactions: Interaction[];
-      }>('http://localhost:5000/api/analyze', {
+      }>('http://literary-character-interactions-production.up.railway.app/api/analyze', {
         text: bookText,
       });
       
