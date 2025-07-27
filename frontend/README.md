@@ -1,69 +1,114 @@
-# React + TypeScript + Vite
+Absolutely! Since your project analyzes character interactions in books using an LLM and you’ve deployed both frontend and backend, here's a professional and clean `README.md` template tailored to your app.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📚 Literary Character Interaction Analyzer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This web application analyzes character interactions in classic literature using an LLM. Users can enter a book ID, and the app will extract characters and map out their interactions.
 
-## Expanding the ESLint configuration
+### ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* 🔍 Analyze character interactions from classic books
+* 🤖 Powered by a large language model (LLM)
+* 📊 Visual graph of interactions
+* 💬 Clear textual output of character relationships
+* ⚡ Fully deployed frontend and backend
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🖥️ Live Demo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Frontend: \[your-frontend-url-here]
+Backend API: \[your-backend-url-here]
+
+---
+
+### 🚀 Tech Stack
+
+* **Frontend**: React, TypeScript, Axios, Vercel
+* **Backend**: Express.js, Node.js, OpenRouter API, Railway
+* **LLM**: OpenRouter-compatible model (e.g. GPT-4)
+
+---
+
+### 🧪 How to Use
+
+1. Go to the frontend URL.
+2. Enter a valid book ID (e.g., `1342` for *Pride and Prejudice* or `2265` for *Hamlet*).
+3. View extracted characters and a visual map of their interactions.
+
+---
+
+### 🛠️ Local Development
+
+#### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### 2. Set up backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd backend
+npm install
+# Create a .env file with:
+# OPENROUTER_API_KEY=your-key-here
+npm run dev
 ```
+
+#### 3. Set up frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+### 🌐 API Reference
+
+**GET** `/api/book/:bookId`
+
+Returns characters and their interactions from the given book.
+
+```json
+{
+  "characters": ["Hamlet", "Ophelia"],
+  "interactions": [
+    { "source": "Hamlet", "target": "Ophelia", "weight": 3 }
+  ]
+}
+```
+
+---
+
+### 📁 Project Structure
+
+```
+/frontend    # React app
+/backend     # Express API
+```
+
+---
+
+### 🛡️ Security
+
+* `.env` files are excluded from version control using `.gitignore`.
+* API keys are stored securely in Railway/Vercel project settings.
+
+---
+
+### 🧠 Future Improvements
+
+* Support more text sources (e.g., PDFs)
+* Improve accuracy with custom fine-tuned models
+* Add named entity disambiguation
+
+---
+
+### 👤 Author
+
+* Nada Adel
