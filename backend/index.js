@@ -135,5 +135,5 @@ app.post('/api/analyze', async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(` Server running on http://literary-character-interactions-production.up.railway.app`);
+  console.log(` Server running on https://literary-character-interactions-production.up.railway.app`);
 });
