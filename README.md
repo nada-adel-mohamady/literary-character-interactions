@@ -14,8 +14,8 @@ This web application analyzes character interactions in classic literature using
 
 ### 🖥️ Live Demo
 
-Frontend: https://literary-character-interactions.vercel.app
-Backend API: https://literary-character-interactions-production.up.railway.app
+- **Frontend:** https://literary-character-interactions.vercel.app
+- **Backend API:** https://literary-character-interactions-production.up.railway.app
 
 ---
 
