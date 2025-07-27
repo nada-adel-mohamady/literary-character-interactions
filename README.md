@@ -14,8 +14,8 @@ This web application analyzes character interactions in classic literature using
 
 ### 🖥️ Live Demo
 
-Frontend: \[https://literary-character-interactions.vercel.app/]
-Backend API: \[https://literary-character-interactions-production.up.railway.app/]
+Frontend: https://literary-character-interactions.vercel.app
+Backend API: https://literary-character-interactions-production.up.railway.app
 
 ---
 
@@ -41,7 +41,7 @@ Backend API: \[https://literary-character-interactions-production.up.railway.app
 
 ```bash
 git clone https://github.com/nada-adel-mohamady/literary-character-interactions.git
-cd your-repo
+cd literary-character-interactions
 ```
 
 #### 2. Set up backend
@@ -94,14 +94,6 @@ Returns characters and their interactions from the given book.
 
 * `.env` files are excluded from version control using `.gitignore`.
 * API keys are stored securely in Railway/Vercel project settings.
-
----
-
-### 🧠 Future Improvements
-
-* Support more text sources (e.g., PDFs)
-* Improve accuracy with custom fine-tuned models
-* Add named entity disambiguation
 
 ---
 
