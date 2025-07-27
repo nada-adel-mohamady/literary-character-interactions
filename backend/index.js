@@ -54,7 +54,6 @@ app.post('/api/analyze', async (req, res) => {
     return res.status(400).send({ error: 'No text provided' });
   }
 
-  // ✂️ Clean Project Gutenberg wrapper text
   const startRegex = /\*\*\* START OF (THIS|THE) PROJECT GUTENBERG EBOOK.*\*\*\*/i;
   const endRegex = /\*\*\* END OF (THIS|THE) PROJECT GUTENBERG EBOOK.*\*\*\*/i;
 

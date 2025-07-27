@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
@@ -6,6 +6,10 @@ type Interaction = {
   source: string;
   target: string;
   weight: number;
+};
+
+type BookResponse = {
+  text: string;
 };
 
 function App() {
@@ -22,7 +26,7 @@ function App() {
     setInteractions([]);
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:5000/api/book/${bookId}`);
+      const res = await axios.get<BookResponse>(`http://localhost:5000/api/book/${bookId}`);
       setBookText(res.data.text);
     } catch (err) {
       console.error(err);
